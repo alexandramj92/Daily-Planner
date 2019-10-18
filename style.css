@@ -1,0 +1,176 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1;
+  }
+
+  
+  .jumbotron {
+    text-align: center;
+    background-image: url(images/clock.jpg);
+    background-size: cover;
+    background-color: transparent;
+    color: black;
+    border-radius: 0;
+    border-bottom: 10px solid black;
+  }
+
+  
+  .description{
+    white-space: pre-wrap;
+  }
+
+  
+  
+
+  /* Styling for container of schedule rows */
+
+  .container{
+    margin-bottom: 50px;
+    position: absolute;
+  }
+
+  .col-md-12{
+    margin-left: 300px;
+  }
+
+ 
+
+  .tRow {
+    height: 80px;
+    border-top: 1px solid white;
+    padding-bottom: 20px;
+  }
+  
+
+  .timeTd{
+    background-color: rgb(6, 37, 174,.3);
+    color: #000000;
+    width: 100px;
+    text-align: center;
+    border-radius: 15px;
+    border: 1px dashed black;
+  }
+
+  .inputTd{
+    width: 500px;
+    border-radius: 15px;
+  }
+
+  .txtArea{
+    background: transparent;
+    border: none;
+    resize: none;
+    color: #000000;
+    padding: 10px;
+    width: 700px;
+    margin: 0px;
+  }
+
+  .saveTd{
+    height: 80px;
+  }
+
+  .saveBtn {
+    /* border-left: 1px solid black; */
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: rgb(6, 37, 174,.3);
+    color: white;
+    height: 92px;
+  }
+  
+  .saveBtn i:hover {
+    font-size: 20px;
+    transition: all .3s ease-in-out;
+  }
+
+
+  /* Media Queries */
+
+  @media only screen and (max-width: 1200px){
+
+    .inputTd{
+      width: 600px;
+    }
+
+    .txtArea{
+      width: 600px;
+    }
+
+  }
+
+  @media only screen and (max-width: 992px){
+
+    
+    .col-md-12{
+      margin-left: 0px;
+    }
+
+    .inputTd{
+      width: 500px;
+    }
+
+    .txtArea{
+      width: 500px;
+    }
+
+
+  }
+
+      
+  @media only screen and (max-width: 750px){
+
+    .inputTd{
+      width: 300px;
+    }
+    .col-md-12{
+      margin-left: 10px;
+    }
+
+    .txtArea{
+      width: 300px;
+    }
+
+  }
+    
+  @media only screen and (max-width: 680px){
+
+    .inputTd{
+      width: 200px;
+    }
+    .col-md-12{
+      margin-left: 50px;
+    }
+
+    .txtArea{
+      width: 200px;
+    }
+
+    .lead{
+      margin-left: 20px;
+    }
+
+
+  }
+
+
+      
+  @media only screen and (max-width: 500px){
+
+    .inputTd{
+      width: 150px;
+    }
+    .col-md-12{
+      margin-left: 70px;
+    }
+
+    .txtArea{
+      width: 150px;
+    }
+
+    .lead{
+      margin-left: 20px;
+    }
+
+  }
