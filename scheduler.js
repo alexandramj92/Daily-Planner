@@ -43,9 +43,10 @@ console.log(currentTime);
 
 
 
-if (timeTxt == currentTime){
+if (timeTxt === currentTime){
    inputTd.attr("style","background-color:rgb(211, 211, 211,.3)");
    //red when present 
+   console.log("in if statement: " + timeTxt);
 }
 
 else if (timeTxt < currentTime){
