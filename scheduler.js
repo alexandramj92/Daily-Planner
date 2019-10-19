@@ -13,6 +13,7 @@ var tRow = $("<tr>");
 tRow.attr("class", "tRow");
 
 var timeTxt = moment().set({hour:hourInput,minute:0,second:0,millisecond:0}).format("hA");
+
 var timeTd = $("<td>").text(timeTxt);
 timeTd.attr("class", "timeTd");
 
@@ -39,19 +40,30 @@ containerCol.append(tRow);
 
 //change color of row depending on past, future, and present
 var currentTime = moment().format('hA');
-console.log(currentTime);
+console.log(timeTxt + " THIS IS MY TIME YXT");
+console.log (currentTime + " THIS IS MY CURRENT TIME");
 
-if (timeTxt < currentTime){
+var newCurTime = parseInt(currentTime.substring(0,(currentTime.length-2)));
+console.log("substring cur time " + newCurTime);
+console.log("new cur time data type " + typeof newCurTime);
+
+var newtimeTxt = parseInt(timeTxt.substring(0,(timeTxt.length-2)));
+console.log("substring timeTxt " + newtimeTxt); 
+console.log("new time txt data type " + typeof newtimeTxt);
+
+if ( newtimeTxt >= 9 && newtimeTxt <= 12 && newtimeTxt > newCurTime || newtimeTxt >= 1 && newtimeTxt <= 5 && newtimeTxt < newCurTime ){
    inputTd.attr("style","background-color:blue");
    // blue when past
    console.log("if statement for past: " + timeTxt + " current time: " + currentTime);
+   console.log(typeof timeTxt + "type of time text", typeof currentTime + "type of current time");
+
 }
 
 
-else if (timeTxt === currentTime){
+else if (newCurTime === newtimeTxt){
    inputTd.attr("style","background-color: red");
    //red when present 
-   console.log("if statement for present: " + timeTxt + " current time: " + currentTime);
+   console.log("if statement for present: " + newtimeTxt + " current time: " + newCurTime);
 }
 
 
