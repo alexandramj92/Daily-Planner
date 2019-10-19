@@ -2,15 +2,21 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     line-height: 1;
+    background-image: url('images/clock2.jpg');
+    background-size: 160% 450%;
+    background-repeat: no-repeat;
+    
+
   }
 
   
   .jumbotron {
     text-align: center;
-    background-color: rgb(6, 37, 174,.3);
+    background-color:rgb(15, 25, 70, .8);
     color: white;
     border-radius: 0;
     border-bottom: 10px solid black;
+    /* test */
   }
 
   
@@ -26,6 +32,7 @@ body {
   .container{
     margin-bottom: 50px;
     position: absolute;
+  
   }
 
   .col-md-12{
@@ -39,7 +46,7 @@ body {
   
 
   .timeTd{
-    background-color: rgb(6, 37, 174,.3);
+    background-color: rgba(15, 25, 70, 0.7);
     color: white;
     width: 100px;
     text-align: center;
@@ -47,15 +54,16 @@ body {
   }
 
   .inputTd{
-    width: 500px;
+    width: 100px;
     height: 80px;
+    margin-left: 300px;
   }
 
   .txtArea{
     background: transparent;
     border: none;
     resize: none;
-    color: #000000;
+    color: white;
     padding: 10px;
     width: 700px;
     margin: 0px;
@@ -65,19 +73,22 @@ body {
   
 
   .saveBtn {
-    /* border-left: 1px solid black; */
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
-    background-color: rgb(6, 37, 174,.3);
+    background-color: rgba(249, 249, 253, 0.5);
     color: white;
     height: 120px;
     margin-bottom: 0px;
     color: white!important;
+    padding: 10px;
+    
 
   }
 
   .saveImg{
-    color: white!important;
+    width: 30px;
+    height: 30px;
+
   }
 
   

@@ -52,8 +52,8 @@ console.log("substring timeTxt " + newtimeTxt);
 console.log("new time txt data type " + typeof newtimeTxt);
 
 if ( newtimeTxt >= 9 && newtimeTxt <= 12 && newtimeTxt > newCurTime || newtimeTxt >= 1 && newtimeTxt <= 5 && newtimeTxt < newCurTime ){
-   inputTd.attr("style","background-color:blue");
-   // blue when past
+   inputTd.attr("style","background-color:rgba(13, 13, 14, 0.9)");
+   // grey when past
    console.log("if statement for past: " + timeTxt + " current time: " + currentTime);
    console.log(typeof timeTxt + "type of time text", typeof currentTime + "type of current time");
 
@@ -61,14 +61,14 @@ if ( newtimeTxt >= 9 && newtimeTxt <= 12 && newtimeTxt > newCurTime || newtimeTx
 
 
 else if (newCurTime === newtimeTxt){
-   inputTd.attr("style","background-color: red");
+   inputTd.attr("style","background-color: rgba(250, 6, 6, 0.9)");
    //red when present 
    console.log("if statement for present: " + newtimeTxt + " current time: " + newCurTime);
 }
 
 
 else {
-   inputTd.attr("style","background-color: green");
+   inputTd.attr("style","background-color: rgba(17, 250, 9, 0.9)");
    //green when future
    console.log ("else statement for future: " + timeTxt  + " current time: " + currentTime);
 
