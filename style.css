@@ -32,27 +32,23 @@ body {
     margin-left: 300px;
   }
 
- 
-
   .tRow {
     height: 80px;
     border-top: 1px solid white;
-    padding-bottom: 20px;
   }
   
 
   .timeTd{
     background-color: rgb(6, 37, 174,.3);
-    color: #000000;
+    color: white;
     width: 100px;
     text-align: center;
-    border-radius: 15px;
-    border: 1px dashed black;
+    border-top: 1px dashed black;
   }
 
   .inputTd{
     width: 500px;
-    border-radius: 15px;
+    height: 80px;
   }
 
   .txtArea{
@@ -63,11 +59,10 @@ body {
     padding: 10px;
     width: 700px;
     margin: 0px;
+    margin-top: 10px;
   }
 
-  .saveTd{
-    height: 80px;
-  }
+  
 
   .saveBtn {
     /* border-left: 1px solid black; */
@@ -75,8 +70,16 @@ body {
     border-bottom-right-radius: 15px;
     background-color: rgb(6, 37, 174,.3);
     color: white;
-    height: 92px;
+    height: 120px;
+    margin-bottom: 0px;
+    color: white!important;
+
   }
+
+  .saveImg{
+    color: white!important;
+  }
+
   
   .saveBtn i:hover {
     font-size: 20px;
@@ -86,7 +89,7 @@ body {
 
   /* Media Queries */
 
-  @media only screen and (max-width: 1200px){
+  @media only screen and (min-width: 993px) and (max-width: 1200px){
 
     .inputTd{
       width: 600px;
@@ -98,47 +101,51 @@ body {
 
   }
 
-  @media only screen and (max-width: 992px){
+  @media only screen and (min-width: 700px) and (max-width: 992px){
 
     
     .col-md-12{
-      margin-left: 0px;
+      margin-left: 50px;
     }
 
     .inputTd{
-      width: 500px;
+      width: 400px!important;
     }
 
     .txtArea{
-      width: 500px;
+      width: 400px!important;
+    }
+
+    .timeTd {
+      width: 100px!important;
     }
 
 
   }
 
       
-  @media only screen and (max-width: 750px){
+  @media only screen and (min-width: 681px) and (max-width: 699px){
 
     .inputTd{
-      width: 300px;
+      width: 300px!important;
     }
     .col-md-12{
       margin-left: 10px;
     }
 
     .txtArea{
-      width: 300px;
+      width: 300px!important;
     }
 
   }
     
-  @media only screen and (max-width: 680px){
+  @media only screen and (min-width: 501px) and (max-width: 680px){
 
     .inputTd{
       width: 200px;
     }
     .col-md-12{
-      margin-left: 50px;
+      margin-left: 20px;
     }
 
     .txtArea{
@@ -154,7 +161,7 @@ body {
 
 
       
-  @media only screen and (max-width: 500px){
+  @media only screen and (min-width: 0px) and (max-width: 500px){
 
     .inputTd{
       width: 150px;

@@ -41,22 +41,24 @@ containerCol.append(tRow);
 var currentTime = moment().format('hA');
 console.log(currentTime);
 
+if (timeTxt < currentTime){
+   inputTd.attr("style","background-color:blue");
+   // blue when past
+   console.log("if statement for past: " + timeTxt + " current time: " + currentTime);
+}
 
 
-if (timeTxt === currentTime){
-   inputTd.attr("style","background-color:rgb(211, 211, 211,.3)");
+else if (timeTxt === currentTime){
+   inputTd.attr("style","background-color: red");
    //red when present 
-   console.log("in if statement: " + timeTxt);
+   console.log("if statement for present: " + timeTxt + " current time: " + currentTime);
 }
 
-else if (timeTxt < currentTime){
-   inputTd.attr("style","background-color:rgb(255,105,97,.3)");
-   //grey when past
-}
 
 else {
-   inputTd.attr("style","background-color: rgb(119,221,119,.3)");
+   inputTd.attr("style","background-color: green");
    //green when future
+   console.log ("else statement for future: " + timeTxt  + " current time: " + currentTime);
 
 }
 
@@ -70,7 +72,7 @@ else {
 
 //function to create a row for each hour
 
-createRow(09);
+createRow(9);
 createRow(10);
 createRow(11);
 createRow(12);
