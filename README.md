@@ -32,6 +32,6 @@ If the time has not passed yet, the text box is green.
 
 ## Credits
 
-I would like to thank Omar for giving me the knowledge to create this password generator using html ,bootstrap, css, javascript, and jQuery and the TAs for helping me work through some the issues I had with my code.
+I would like to thank Omar for giving me the knowledge to create this planner using html ,bootstrap, css, javascript, and jQuery and the TAs for helping me work through some the issues I had with my code.
 
 
